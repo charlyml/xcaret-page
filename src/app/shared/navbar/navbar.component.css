@@ -1,0 +1,33 @@
+.color-white{
+  color: white;
+}
+
+.show-mobile{
+  display: none;
+}
+
+.navbar-toggler-icon{
+  width: 1em;
+}
+
+.ml-auto .dropdown-menu {
+  left: auto !important;
+  right: 0px;
+}
+
+ul > li{
+  border-right: 1px solid hsla(0,0%,100%,.6);
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    padding: 0;
+  }
+  .show-mobile {
+    display: inline;
+  }
+
+  .show-mobile > a{
+    padding-right: 15px;
+  }
+}
