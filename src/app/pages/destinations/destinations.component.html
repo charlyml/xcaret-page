@@ -1,3 +1,18 @@
-<p>
-  destinations works!
-</p>
+<div class="container-fluid">
+  <div class="row first" *ngFor="let destination of destinations">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img [src]="destination.image" class="img-fluid d-block w-100" alt="...">
+        </div>
+      </div>
+    </div>
+    <h5>{{ destination.title }}</h5>
+    <p>
+      {{ destination.text }}
+    </p>
+    <button style="color: white" type="button" class="btn btn-outline-light rounded-pill btn-sm">
+      <span>Comprar mi tour »</span>
+    </button>
+  </div>
+</div>

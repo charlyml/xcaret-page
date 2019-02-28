@@ -1,5 +1,32 @@
-/* You can add global styles to this file, and also import other style files */
-
 body {
   padding-top: 2.8rem;
+}
+
+footer {
+  color: white;
+  bottom: 0;
+  width: 100%;
+}
+
+footer > div > div {
+  color: white;
+  padding: 10px;
+}
+
+footer > .buy-me > div:nth-child(1) {
+  font-size: 17px;
+  background-color: rgb(36, 36, 36);
+}
+
+footer > .buy-me > div:nth-child(2) {
+  background-color: rgb(61, 61, 61);
+}
+
+.experiancias-xcaret{
+  padding: 10px;
+  background-color: rgb(36, 36, 36);
+}
+
+a {
+  text-decoration: none;
 }

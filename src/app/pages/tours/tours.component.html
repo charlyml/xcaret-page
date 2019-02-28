@@ -1,3 +1,25 @@
-<p>
-  tours works!
-</p>
+<div class="container my-3">
+  <div class="row">
+    <div class="col-12">
+      <h1>{{title}}</h1>
+    </div>
+    <div class="col-sm-12 my-3" *ngFor="let tour of toursList">
+      <div class="media">
+        <img [src]="tour.image" class="align-self-center mr-3" width="20%" alt="...">
+        <div class="media-body">
+          <h5 class="mt-0">{{ tour.name }}</h5>
+          Cras sit amet nibh libero, in gravida nulla. Nulla vel metus scelerisque ante sollicitudin. Cras purus odio.
+          <p><br>
+            Precio regular <span class="regular-price">{{ tour.regularPrice }}</span><br>
+            <strong>Precio en línea {{ tour.onlinePrice }}</strong>
+          </p>
+          <br>
+          <button type="button" class="btn btn-outline-dark rounded-pill btn-sm">
+            MÁS INFO »
+          </button>
+          <button type="button" class="btn btn-dark rounded-pill btn-sm">COMPRAR</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -16,6 +16,7 @@ import { QuintanarroensesComponent } from './pages/quintanarroenses/quintanarroe
 import { XcaretHotelComponent } from './pages/xcaret-hotel/xcaret-hotel.component';
 import { PriceGuideComponent } from './pages/price-guide/price-guide.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,

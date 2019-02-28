@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DestinationService } from '../../services/destination.service';
 
 @Component({
   selector: 'app-destinations',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DestinationsComponent implements OnInit {
 
-  constructor() { }
+  destinations: any;
+  constructor(private destinationService: DestinationService) {
+    this.destinations = {};
+  }
 
   ngOnInit() {
+    this.destinations = this.destinationService.getDestinations();
   }
 
 }

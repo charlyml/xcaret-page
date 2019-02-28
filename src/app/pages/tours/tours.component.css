@@ -1,0 +1,13 @@
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+.regular-price {
+  text-decoration: line-through;
+  font-weight: bold;
+}
+
+.online-price {
+  font-weight: bold;
+}
