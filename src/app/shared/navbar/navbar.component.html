@@ -6,7 +6,7 @@
 
   <div class="show-mobile mr-auto">
     <a class="navbar-brand" [routerLink]="['/']">
-      <img src="../../assets/images/xcaret_logo_es.svg" width="140" height="30" alt="">
+      <img src="../../assets/images/xcaret_logo_es.svg" class="img-fluid" width="140" height="30" alt="">
     </a>
     <a href="">
       <i class="fa fa-shopping-cart fa-1x color-white"></i>
@@ -20,49 +20,56 @@
   </div>
 
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav ml-auto">
+    <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#"><i class="fa fa-home"></i> Inicio</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Preguntas frecuentes</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <i class="fa fa-phone"></i> Atención a clientes
+        <a class="nav-link" [routerLink]="['/home']" routerLinkActive="active">
+          <i class="fa fa-home"></i> Inicio
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Cancún</a>
-          <a class="dropdown-item" href="#">Playa del Carmen</a>
-          <a class="dropdown-item" href="#">Brasil</a>
-        </div>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">
-          <i class="fa fa-shopping-cart fa-1x color-white"></i>
+        <a class="nav-link" [routerLink]="['/fichas-destino-gastronomia']" routerLinkActive="active">
+          Fichas destino y gastronomía
         </a>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          MXN
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/lista-tours']" routerLinkActive="active">
+          Lista tours arqueológicos
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Cancún</a>
-          <a class="dropdown-item" href="#">Playa del Carmen</a>
-          <a class="dropdown-item" href="#">Brasil</a>
-        </div>
       </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-          aria-haspopup="true" aria-expanded="false">
-          <img src="../../assets/images/espaniol.png" width="25" class="d-inline-block align-top" alt="">
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/ficha-producto']" routerLinkActive="active">
+          Ficha de producto
         </a>
-        <div class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#"><img src="../../assets/images/english.png" alt="EN"> EN</a>
-          <a class="dropdown-item" href="#"><img src="../../assets/images/portugues.png" alt="PT"> PT</a>
-        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/ficha2-tours']" routerLinkActive="active">
+          Ficha 2 tours
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/promociones']" routerLinkActive="active">
+          Promociones
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/paquetes-prearmados']" routerLinkActive="active">
+          Paquetes prearmados
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/quintanarroenses']" routerLinkActive="active">
+          Quintanarroenses
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/hotel-xcaret']" routerLinkActive="active">
+          Hotel Xcaret
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" [routerLink]="['/guia-precios']" routerLinkActive="active">
+          Guía de precios
+        </a>
       </li>
     </ul>
   </div>
